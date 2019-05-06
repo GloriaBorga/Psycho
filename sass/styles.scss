@@ -1,0 +1,399 @@
+$main: #004D49;
+$white: #f3f3f3;
+$h-font: 'Playfair Display', serif;
+$text-font: 'Source Sans Pro', sans-serif;
+*{
+    margin: 0px;
+    padding: 0px;
+   // border: 1px solid;
+}
+html { font-size: calc(1em + 1vw) }
+body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    //background-color: $white;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1, h2, h3{
+    margin: 0;
+    padding: 1em 0;
+    font-size: 2em;
+}
+p{
+    margin: 0;
+    padding: 1em 0;
+    font-size: 1em;
+}
+.btn{
+    color: $main;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 2em;
+    margin: .5em 0;
+}
+.btn:hover{
+    background: #f3f3f3;
+    color: aquamarine;
+}
+/* ======== Navbar ======== */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 5vh;
+    background-color: $main;
+    position: fixed;
+    min-width: 100%;
+    z-index: 1000;
+    opacity: 0.9;
+}
+.nav-links{
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 5vh;
+    background-color: $main;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content:  space-evenly;
+    transform: translateX(100%);  
+    transition: transform 0.5s ease-in;
+    li{
+        list-style: none;
+        opacity: 0;
+        justify-content: space-between;
+            display: flex;
+    }
+    a{
+        font-family: $text-font;
+        color:$white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 1em;
+    }
+}
+
+
+.nav-links a:after{
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid $white;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+.nav-links a:hover:after{
+    width: 100%;
+}
+.burger{
+    display: block;
+    cursor: pointer;    
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: $white;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+.nav-active{
+    transform: translateX(0%);
+    box-shadow:-5px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line-1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line-2{
+    opacity: 0;
+}
+.toggle .line-3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ======== Header Showcase ======== */
+#showcase{
+    min-height: 80vh;
+
+}
+.bg-image{
+    position: absolute;
+    background-image: url("../images/hero--1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+}
+@media (min-width: 410px){
+.bg-image{
+    background-image: url("../images/hero--2.jpg");
+}
+}
+@media (min-width: 560px){
+    .bg-image{
+        background-image: url("../images/hero--3.jpg");
+    }
+}
+@media (min-width:  767px){
+    #showcase {
+        min-height: 90vh;
+    }
+    .bg-image{
+        background-image: url("../images/hero--4.jpg");
+        height: 90vh;
+    }
+}
+@media (min-width:  1024px){
+    #showcase {
+        min-height: 100vh;
+    }
+    .bg-image{
+        background-image: url("../images/action-adult-adventure-1319795.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+
+  
+/* ======== Sections ======== */
+#section-a,#section-b,#section-c,#Esection-d,#section-e{
+    //background: #f3f3f3;
+    padding: 40px 0;
+}
+.container{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.grid__item--text{
+    grid-column: 1/1;
+}
+
+h2{
+    font-family: $h-font;
+    color: $main;
+    font-size: 2em;
+}
+p{
+    font-family: $text-font;
+    color: $main;
+}
+.grid__item--img{
+   margin: 1em 0;
+   grid-column: 1/1;
+   picture{
+       width: 100%;
+   }
+}
+.grid__item--photo{
+    margin: 1em 0;
+    grid-column: 1/1;
+    picture{
+        width: 100%;
+    }
+}
+/* ======== Section B ======== */
+.grid__item--ul{
+    margin-left: 10vw;
+    margin-bottom: 10vh;
+    li{
+        padding: 5px 0;
+        font-size: 1em;
+        color: $main;
+        font-family: $text-font;
+    }
+}
+/* ======== Section C ======== */
+.card{
+    grid-column: 1/1;
+    align-items: center;
+    -ms-grid-column: 1;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        font-family: $h-font;
+        color: $main;
+        font-size: 1.5em;
+        margin: 5px;
+        padding: 0;
+    }
+    p{
+        font-size: 0.9em;
+        margin: 5px;
+        padding: 0;
+    }
+}
+.btn {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 16px;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .btn__more{
+    color: $main;
+    font-family: $text-font;
+}
+.btn:hover{
+    color: $main;
+}
+/* ======== Section D ======== */
+.faq{
+    grid-column: 1/1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+button.accordion{
+    width: 100%;
+    border-bottom: #004D49 1px solid;
+    text-align: left;
+    padding: 15px 0 0 0;
+    margin: 0 0;
+    font-weight: 900;
+    font-family: $h-font;
+    font-size: 0.7em;
+}
+button.accordion::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f067";
+    font-size: 1em;
+    float: right;
+}
+button.accordion.is-open::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f068";
+    float: right;
+}
+
+.accordion-content{
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+/* ======== Section E ======== */
+.krakow{
+    font-family: $text-font;
+    font-size: 2em;
+    padding-bottom: 0;
+}
+.street{
+    font-family: $text-font;
+    font-size: 1.5em;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.number-1,.number-2{
+    font-family: $text-font;
+    font-size: 0.9em;
+    padding: 0;
+}
+.number-2{
+    padding-bottom: 10vh;
+}
+
+
+#map {
+    height: 400px; 
+    width: 100%;  
+}
+/* ======== Footer ======== */
+footer{
+    height:200px;
+    width: 100%;
+    background-color: #312F38;
+}
+
+
+
+
+/* --- Media Queries --- */   
+@media (min-width: 410px){
+}
+@media (min-width: 580px){
+
+}
+
+@media (min-width: 768px){
+nav{
+    min-height: 7vh;
+}
+.nav-links{
+    height: 93vh;
+    top: 7vh;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.grid__item--text{
+    grid-column: 1/2;
+}
+
+.grid__item--img{
+   grid-column: 2/2;
+}
+.grid__item--photo{
+    grid-column: 1/1;
+}
+
+}
+@media (min-width: 1024px){
+nav{
+    justify-content: space-between;
+    min-height: 8vh;
+
+}
+.nav-links{
+    height: 92vh;
+    top: 8vh;
+}
+.burger{
+    padding-right: 3%;
+    padding-left: 0%;
+}
+}
