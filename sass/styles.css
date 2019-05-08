@@ -22,13 +22,14 @@ img {
 h1, h2, h3 {
   margin: 0;
   padding: 1em 0;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 p {
   margin: 0;
   padding: 1em 0;
-  font-size: 1em;
+  font-size: 0.9em;
+  text-align: justify;
 }
 
 .btn {
@@ -153,7 +154,7 @@ nav {
   z-index: 1;
   width: 60px;
   height: 60px;
-  background: #004D49;
+  background: #004d49cc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,57 +266,51 @@ nav {
 
 /* ======== Header Showcase ======== */
 #showcase {
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .bg-image {
   position: absolute;
-  background-image: url("../images/hero--1.jpg");
+  background-image: url("../images/hero_image-mob.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   z-index: -1;
 }
 
-@media (min-width: 410px) {
-  .bg-image {
-    background-image: url("../images/hero--2.jpg");
-  }
+.content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media (min-width: 560px) {
-  .bg-image {
-    background-image: url("../images/hero--3.jpg");
-  }
+.logo {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
 }
 
-@media (min-width: 767px) {
-  #showcase {
-    min-height: 90vh;
-  }
-  .bg-image {
-    background-image: url("../images/hero--4.jpg");
-    height: 90vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  #showcase {
-    min-height: 100vh;
-  }
-  .bg-image {
-    background-image: url("../images/action-adult-adventure-1319795.jpg");
-    background-size: cover;
-    height: 100vh;
-  }
+.arrow-down {
+  width: 10vw;
+  margin-top: 35vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* ======== Sections ======== */
 #section-a, #section-b, #section-c, #Esection-d, #section-e {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .container {
@@ -339,7 +334,6 @@ nav {
 h2 {
   font-family: "Playfair Display", serif;
   color: #004D49;
-  font-size: 2em;
 }
 
 p {
@@ -522,7 +516,39 @@ footer {
 }
 
 /* --- Media Queries --- */
+@media (min-width: 1440px) {
+  .bg-image {
+    background-image: url("../images/hero_image-big.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
 @media (min-width: 768px) {
+  .bg-image {
+    background-image: url("../images/hero_image-med.jpg");
+  }
+  .logo {
+    width: 50vw;
+    margin-top: 20vh;
+  }
+  .arrow-down {
+    margin-top: 45vh;
+    width: 8vw;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .burger {
+    padding-right: 3%;
+    padding-left: 0%;
+  }
   .grid {
     display: -ms-grid;
     display: grid;
@@ -542,12 +568,12 @@ footer {
     -ms-grid-column: 1;
     grid-column: 1/1;
   }
-}
-
-@media (min-width: 1024px) {
-  .burger {
-    padding-right: 3%;
-    padding-left: 0%;
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+    padding-right: 3vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */
