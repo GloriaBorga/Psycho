@@ -55,7 +55,7 @@
   <main id="main">
     <section id="section-a">
       <div class="container">
-        <div class="grid"></div>
+        <div class="grid">
           <div class="grid__item--text">
             <h2>Czym jest psychoterapia</h2>
             <p>Psychoterapia jest metodą leczenia i wspomagania osób przeżywających
@@ -81,7 +81,7 @@
     <section id="section-b">
         <div class="container">
             <div class="grid">
-            <div class="grid__item--text">
+            <div class="grid__item--text section-b_text">
               <h2>W czym możemy pomóc:</h2>
               <ul class="grid__item--ul">
                   <li>utrzymujące się uczucie smutku, beznadziejności,
@@ -100,28 +100,29 @@
                   <li>trudności motywacyjne, rozwój osobisty</li>
                 </ul>
             </div>
-            <div class="grid__item--img">
+            <div class="grid__item--img section-b_img">
               <picture>
-                  <source media="(max-width: 360px)" srcset="images/section__b--small.jpg 360w">
-                  <source media="(max-width: 1024px)" srcset="images/section__b--big.jpg 1024w">
-                  <img class="" alt="" src="images/section__b--big.jpg">
-                </picture>
+                <source media="(max-width: 360px)" srcset="images/section__a--small.jpg 360w">
+                <source media="(max-width: 568px)" srcset="images/section__a--med.jpg 568w">
+                <source media="(max-width: 1024px)" srcset="images/section__a--big.jpg 1024w">
+                <img class="" alt="" src="images/section__a--big.jpg">
+              </picture>
             </div>
           </div>
         </div>
     </section>
     <section id="section-c">
       <div class="container">
+        <h2>Terapeuci</h2>
         <div class="grid">
-          <h2>Terapeuci</h2>
-          <div class="grid__item--photo">
+          <div class="grid__item--photo photo__person--1">
               <picture>
                   <source media="(max-width: 360px)" srcset="images/zdjecie--small.jpg 360w">
                   <source media="(max-width: 768px)" srcset="images/zdjecie--big.jpg 768w">
                   <img class="" alt="" src="images/zdjecie--big.jpg">
                 </picture>
           </div>
-          <div class="card">
+          <div class="card person-1">
             <h3>Katarzyna Kowalska</h3>
             <p>psycholog/psychoterapeuta</p>
             <p>+48 515 199 230</p>
@@ -130,14 +131,14 @@
               <span>więcej</span><i class="fas fa-angle-right"></i>
             </a>
           </div>
-          <div class="grid__item--photo">
+          <div class="grid__item--photo photo__person--2">
               <picture>
                   <source media="(max-width: 360px)" srcset="images/zdjecie--small.jpg 360w">
                   <source media="(max-width: 768px)" srcset="images/zdjecie--big.jpg 768w">
                   <img class="" alt="" src="images/zdjecie--big.jpg">
                 </picture>
           </div>
-          <div class="card">
+          <div class="card person-2">
             <h3>Marta gałkowska</h3>
             <p>psycholog/psychoterapeuta</p>
             <p>+48 661 643 799</p>
@@ -152,8 +153,8 @@
     <section id="section-d">
       <div class="container">
         <div class="grid">
-            <h2>FAQ</h2>
-            <div class="faq">
+            <h2 class="faq">FAQ</h2>
+            <div class="faq-wrapper">
               <button class="btn accordion" type="button">Czy psychoterapia jest dla mnie?</button>
               <div class="accordion-content">
                 <p>Psychoterapia jest dla tych, którzy poszukuja zmiany, poprawy nastroju lub jakości życia, chcą zrozumieć motywy swoich działań i reakcje emocjonalne czy też ulepszyć komunikację w swoim związku. Po pierwszych konsultacjach będziesz mógł zadecydować, czy psychoterapia jest tym, czego szukasz, a także określić swoje oczekiwania.</p>
@@ -206,8 +207,8 @@
     <section id="section-e">
       <div class="container">
         <div class="grid">
-          <h2>Kontakt i dojazd</h2>
           <div class="grid__item--text">
+            <h2>Kontakt i dojazd</h2>
             <p class="krakow">Kraków</p>
             <p class="street">ul.Combrowa 7</p>
             <p class="number-1">+48 555 555 555 - Marta Gałkowska</p>
@@ -221,6 +222,20 @@
     </section>
   </main>
   <footer>
+    <div class="grid--footer">
+      <div class="footer--logo">
+        <img src="images/logo-white.png" alt="logo">
+      </div>
+      <div class="footer--text">
+        <ul>
+          <li>Psychoterapia</li>
+          <li>Terapeuci</li>
+          <li>FAQ</li>
+          <li>Cennik</li>
+          <li>Kontakt</li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <!-- JavaScript -->
   <script src="scripts/index.js"></script>
