@@ -334,6 +334,8 @@ nav {
 h2 {
   font-family: "Playfair Display", serif;
   color: #004D49;
+  border-left: 1px solid #004D49;
+  padding: 0 0 0 2px;
 }
 
 p {
@@ -511,8 +513,9 @@ button.accordion.is-open::after {
 
 /* ======== Footer ======== */
 footer {
-  height: 150px;
+  height: 100%;
   width: 100%;
+  padding: 40px 0;
   background-color: #312F38;
 }
 
