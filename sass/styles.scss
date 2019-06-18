@@ -54,6 +54,7 @@ nav{
     text-align: center;
     opacity: 0.9;
     transform: translateX(100%);
+    z-index: 1;
 }
 .nav-links{
     position: relative;
@@ -79,9 +80,14 @@ nav{
         text-decoration: none;
         letter-spacing: 3px;
         font-size: 1em;
+        padding: 1em 1em 0 1em;
+        cursor: pointer;
     }
 }
-.nav-links a::after{
+.li-first {
+    margin-top: 20%;
+  }
+.nav-links a span::after{
     content: "";
     position: absolute;
     border-bottom: 3px solid $white;
@@ -90,7 +96,7 @@ nav{
     bottom: 0;
     transition: 0.5s ease;
 }
-.nav-links a:hover::after{
+.nav-links a span:hover::after{
     width: 100%;
 }
 .nav-active{
@@ -215,13 +221,27 @@ nav{
     margin-right: auto;
     margin-top: 30vh;
 }
+@keyframes bounce {
+    from{
+        transform: translateY(-10px)
+    }
+    to{
+        transform: translateY(10px)
+    }
+}
 .arrow-down{
     width: 10vw;
     margin-top: 35vh;
     align-self: center;
+
+    animation: bounce 1.5s infinite alternate ease-in-out;
 }
 
 /* ======== Sections ======== */
+main{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
 #section-a,#section-b,#section-c,#Esection-d,#section-e{
     //background: #f3f3f3;
     padding: 20px 0;
@@ -298,7 +318,6 @@ p{
 }
 .btn {
     position: relative;
-    z-index: 1;
     display: inline-block;
     vertical-align: middle;
     margin: 16px;
@@ -422,13 +441,6 @@ footer{
 
 
 /* --- Media Queries --- */
-@media (min-width:  1440px){
-    .bg-image{
-        background-image: url("../images/hero_image-big.jpg");
-        background-size: cover;
-        height: 100vh;
-    }
-}
 
 @media (min-width: 768px){
     .bg-image{
@@ -555,4 +567,26 @@ footer{
     .number-2{
         padding-bottom: 0vh;
     }
+}
+@media (min-width:  1440px){
+    .bg-image{
+        background-image: url("../images/hero_image-big.jpg");
+        background-size: cover;
+        height: 100vh;
+    }
+    .arrow-down{
+        margin-top: 30vh;
+    }
+}
+@media (min-width:  1600px){
+    .arrow-down{
+        margin-top: 25vh;
+        width: 2vw;
+    }
+    .container{
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
