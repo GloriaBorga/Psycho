@@ -111,6 +111,10 @@ nav {
   cursor: pointer;
 }
 
+.nav-links a span {
+  position: relative;
+}
+
 .li-first {
   margin-top: 20%;
 }

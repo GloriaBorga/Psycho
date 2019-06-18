@@ -82,6 +82,9 @@ nav{
         font-size: 1em;
         padding: 1em 1em 0 1em;
         cursor: pointer;
+        span{
+            position: relative;
+        }
     }
 }
 .li-first {
