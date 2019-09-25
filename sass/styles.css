@@ -166,7 +166,7 @@ nav {
   z-index: 1;
   width: 60px;
   height: 60px;
-  background: #004d49cc;
+  background: #004d49;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,6 +529,15 @@ button.accordion.is-open::after {
       grid-template-columns: 1fr;
 }
 
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* ======== Section F ======== */
 .krakow {
   font-family: "Source Sans Pro", sans-serif;
@@ -570,8 +579,8 @@ footer {
 .grid--footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2.5% 40% 5% 40% 2.5%;
-      grid-template-columns: 2.5% 40% 5% 40% 2.5%;
+  -ms-grid-columns: 2.5% 30% 20% 20% 20% 7.5%;
+      grid-template-columns: 2.5% 30% 20% 20% 20% 7.5%;
   grid-gap: 0.5em;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
@@ -579,8 +588,7 @@ footer {
 
 .footer--logo {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  grid-column: 2;
   padding-left: .3em;
   -ms-grid-row: 1;
   grid-row: 1;
@@ -588,8 +596,7 @@ footer {
 
 .footer--text {
   -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
+  grid-column: 4;
   -ms-grid-row: 1;
   grid-row: 1/1;
   -ms-grid-column-align: center;
@@ -604,6 +611,26 @@ footer {
 }
 
 .footer--text ul li {
+  padding: 1px;
+}
+
+.footer--text_2 {
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #b5b5b5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8em;
+}
+
+.footer--text_2 ul {
+  list-style: none;
+}
+
+.footer--text_2 ul li {
   padding: 1px;
 }
 
