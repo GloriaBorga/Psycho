@@ -32,6 +32,12 @@ p {
   text-align: justify;
 }
 
+a:-webkit-any-link {
+  color: #f3f3f3;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .btn {
   color: #004D49;
   text-decoration: none;
@@ -351,7 +357,7 @@ main {
 }
 
 #section-a, #section-b, #section-c, #section-d, #section-e, #section-f {
-  padding: 20px 0;
+  padding: 5vh 0;
 }
 
 .container {
@@ -372,11 +378,16 @@ main {
   grid-column: 1/1;
 }
 
+.grid__item--text p {
+  padding: 0 2vw;
+}
+
 h2 {
   font-family: "Playfair Display", serif;
   color: #004D49;
   border-left: 1px solid #004D49;
   padding: 0 0 0 2px;
+  margin-bottom: 2vh;
 }
 
 p {
@@ -385,7 +396,7 @@ p {
 }
 
 .grid__item--img {
-  margin: 1em 0;
+  margin: 5vh 0;
   -ms-grid-column: 1;
   grid-column: 1/1;
 }
@@ -448,6 +459,10 @@ p {
   padding: 0;
 }
 
+.card a {
+  color: #004D49;
+}
+
 .btn {
   position: relative;
   display: inline-block;
@@ -485,6 +500,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 2vw;
 }
 
 button.accordion {
@@ -539,6 +555,10 @@ button.accordion.is-open::after {
 }
 
 /* ======== Section F ======== */
+.grid__item--text-F {
+  padding-bottom: 3vh;
+}
+
 .krakow {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 2em;
@@ -579,8 +599,8 @@ footer {
 .grid--footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2.5% 30% 20% 20% 20% 7.5%;
-      grid-template-columns: 2.5% 30% 20% 20% 20% 7.5%;
+  -ms-grid-columns: 2.5% 30% 10% 20% 20% 7.5%;
+      grid-template-columns: 2.5% 30% 10% 20% 20% 7.5%;
   grid-gap: 0.5em;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
@@ -632,6 +652,16 @@ footer {
 
 .footer--text_2 ul li {
   padding: 1px;
+}
+
+.footer-bnt {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #b5b5b5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8em;
+  padding: 0 0;
+  margin: 0 0;
 }
 
 /* --- Media Queries --- */
@@ -816,12 +846,22 @@ footer {
   #section-f > .container > .grid > h2 {
     margin-left: 5vw;
   }
+  .grid__item--text-F {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
   .krakow, .street, .number-1, .number-2 {
     padding-left: 3vw;
     padding-top: 0.5em;
   }
   .number-2 {
     padding-bottom: 0vh;
+  }
+  .grid__item--map {
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
 }
 
