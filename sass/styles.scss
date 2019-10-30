@@ -228,7 +228,7 @@ nav{
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30vh;
+    margin-top: 17vh;
 }
 @keyframes bounce {
     from{
@@ -240,7 +240,7 @@ nav{
 }
 .arrow-down{
     width: 10vw;
-    margin-top: 35vh;
+    margin-top: 45vh;
     align-self: center;
 
     animation: bounce 1.5s infinite alternate ease-in-out;
@@ -248,12 +248,12 @@ nav{
 
 /* ======== Sections ======== */
 main{
-    padding-top: 10vh;
+    padding-top: 2vh;
     padding-bottom: 2vh;
 }
 #section-a,#section-b,#section-c,#section-d,#section-e,#section-f{
     //background: #f3f3f3;
-    padding: 5vh 0;
+    padding: 1vh 0;
 }
 .container{
     width: 90vw;
@@ -368,15 +368,14 @@ button.accordion{
     width: 100%;
     border-bottom: #004D49 1px solid;
     text-align: left;
-    padding: 15px 0 0 0;
+    padding: 15px 0 5px 0;
     margin: 0 0;
-    font-weight: 900;
-    font-family: $h-font;
-    font-size: 0.7em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.8em;
 }
 button.accordion::after {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+    font-weight: 600;
     content: "\f067";
     font-size: 1em;
     float: right;
@@ -402,6 +401,8 @@ button.accordion.is-open::after{
 .price{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px #004D49 solid;
+    padding: 5px !important;
 }
 /* ======== Section F ======== */
 .grid__item--text-F{
@@ -549,7 +550,7 @@ footer{
 }
 @media (min-width: 1024px){
     main{
-        padding-top: 10vh;
+        padding-top: 5vh;
         padding-bottom: 5vh;
     }
     .logo{
@@ -615,6 +616,9 @@ footer{
     .person-1{
         grid-column: 1/2;
         grid-row: 1/2;
+    }
+    .person-1 > h2{
+        
     }
     .photo__person--2{
         grid-column: 1/2;
@@ -700,7 +704,7 @@ footer{
 }
 @media (min-width:  1400px){
     main{
-        padding-top: 10vh;
+        padding-top: 0vh;
         padding-bottom: 8vh;
     }
     .bg-image{
@@ -718,7 +722,7 @@ footer{
 }
 @media (min-width:  1600px){
     main{
-        padding-top: 10vh;
+        padding-top: 0vh;
         padding-bottom: 10vh;
     }
     .arrow-down{
@@ -729,6 +733,9 @@ footer{
         width: 80vw;
         margin-left: auto;
         margin-right: auto;
+    }
+    .grid__item--text{
+
     }
     .grid--footer{
         display: grid;
