@@ -7,7 +7,11 @@ $text-font: 'Source Sans Pro', sans-serif;
     padding: 0px;
    // border: 1px solid;
 }
-html { font-size: calc(1em + 1vw) }
+html {
+    font-size: calc(1em + 1vw);
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
     margin: 0px;
@@ -133,8 +137,8 @@ nav{
     top: 10px;
     right: 0;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: #004d49;
     display: flex;
     align-items: center;
@@ -269,15 +273,15 @@ main{
     grid-column: 1/1;
 }
 .grid__item--text p {
-    padding: 0 2vw;
+    padding: 0 3vw;
 }
 
 h2{
-    font-family: $h-font;
+    font-family: $text-font;
     color: $main;
     border-left: 1px solid #004D49;
     padding: 0 0 0 2px;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
 }
 p{
     font-family: $text-font;
@@ -299,7 +303,7 @@ p{
 }
 /* ======== Section B ======== */
 .grid__item--ul{
-    margin-left: 10vw;
+    margin-left: 7vw;
     margin-bottom: 2vh;
     li{
         padding: 5px 0;
@@ -317,7 +321,7 @@ p{
     flex-direction: column;
 
     h3{
-        font-family: $h-font;
+        font-family: $text-font;
         color: $main;
         font-size: 1.5em;
         margin: 5px;
@@ -360,11 +364,13 @@ p{
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 0 2vw;
+    padding: 0vh 2vw 3vh 3vw;
 
 }
 
 button.accordion{
+    letter-spacing: 0px;
+    position: unset;
     width: 100%;
     border-bottom: #004D49 1px solid;
     text-align: left;
@@ -402,7 +408,11 @@ button.accordion.is-open::after{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px #004D49 solid;
-    padding: 5px !important;
+    padding: 1vh 2vw 1vh 0vw !important;
+    margin-left: 3vw;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 0.8em;
+    color: $main;
 }
 /* ======== Section F ======== */
 .grid__item--text-F{
@@ -410,12 +420,12 @@ button.accordion.is-open::after{
 }
 .krakow{
     font-family: $text-font;
-    font-size: 2em;
+    font-size: 0.9em;
     padding-bottom: 0;
 }
 .street{
     font-family: $text-font;
-    font-size: 1.5em;
+    font-size: 0.9em;
     padding-bottom: 0;
     padding-top: 0;
 }
