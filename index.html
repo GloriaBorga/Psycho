@@ -214,26 +214,37 @@
     </section>
     <section id="section-e">
       <div class="container">
-        <div class="grid">
+        <div class="grid offer">
+            <div class="grid__item--img">
+                <picture>
+                  <source media="(max-width: 360px)" srcset="images/bb.jpg 360w">
+                  <source media="(max-width: 568px)" srcset="images/bb.jpg 568w">
+                  <source media="(max-width: 1024px)" srcset="images/bb.jpg 1024w">
+                  <img class="" alt="" src="images/bb.JPG">
+                  <!--
+                  <source media="(max-width: 360px)" srcset="images/section__a--small.jpg 360w">
+                  <source media="(max-width: 568px)" srcset="images/section__a--med.jpg 568w">
+                  <source media="(max-width: 1024px)" srcset="images/section__a--big.jpg 1024w">
+                  <img class="" alt="" src="images/section__a--big.jpg">
+                  -->
+                </picture>
+              </div>
           <div class="grid__item--text">
-            <h2>Oferta</h2>
-            <div class="price"><span>Terapia indywidualna</span><span>100 zł</span></div>
-            <div class="price"><span>Terapia par</span><span>150 zł</span></div>
-            <div class="price"><span>Konsultacja psychologiczna</span><span> 100 zł</span></div>
-          </div>
-          <div class="grid__item--img">
-            <picture>
-              <source media="(max-width: 360px)" srcset="images/bb.jpg 360w">
-              <source media="(max-width: 568px)" srcset="images/bb.jpg 568w">
-              <source media="(max-width: 1024px)" srcset="images/bb.jpg 1024w">
-              <img class="" alt="" src="images/bb.JPG">
-              <!--
-              <source media="(max-width: 360px)" srcset="images/section__a--small.jpg 360w">
-              <source media="(max-width: 568px)" srcset="images/section__a--med.jpg 568w">
-              <source media="(max-width: 1024px)" srcset="images/section__a--big.jpg 1024w">
-              <img class="" alt="" src="images/section__a--big.jpg">
-              -->
-            </picture>
+              <h2>Oferta</h2>
+            <div class="Price__box--bigscreen">
+              <div class="price">
+                <span>Terapia indywidualna</span>
+                <span>100 zł</span>
+              </div>
+              <div class="price">
+                <span>Terapia dla par</span>
+                <span>150 zł</span>
+              </div>
+              <div class="price" style="margin-bottom: 5vh; border-right: none;">
+                <span>Konsultacja psychologiczna</span>
+                <span> 100 zł</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -241,15 +252,15 @@
     <section id="section-f">
       <div class="container">
         <div class="grid">
+            <div class="grid__item--map">
+                <div id="map"></div>
+            </div>
           <div class="grid__item--text grid__item--text-F">
             <h2>Kontakt i dojazd</h2>
             <p class="krakow">Kraków</p>
             <p class="street">ul.Combrowa 7</p>
             <p class="number-1">+48 661 643 799 - Marta Gałkowska</p>
             <p class="number-2">+48 515 199 230 - Katarzyna Kowalska</p>
-          </div>
-          <div class="grid__item--map">
-              <div id="map"></div>
           </div>
         </div>
       </div>
