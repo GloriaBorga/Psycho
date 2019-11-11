@@ -70,6 +70,23 @@ nav {
   z-index: 1;
 }
 
+.hide-menu {
+  position: fixed;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+.none {
+  display: none;
+}
+
 .nav-links {
   position: relative;
   height: 100vh;
