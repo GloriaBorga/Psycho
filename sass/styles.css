@@ -49,7 +49,6 @@ a:-webkit-any-link {
 
 .btn:hover {
   background: none;
-  color: aquamarine;
 }
 
 .container-fluid {
@@ -434,6 +433,10 @@ p {
 }
 
 /* ======== Section B ======== */
+.section-b__h2 {
+  padding: 0 0 0 4vw;
+}
+
 .grid__item--ul {
   margin-left: 5vw;
   margin-bottom: 2vh;
@@ -519,11 +522,19 @@ p {
           transform: translateX(10px);
 }
 
+.arrow-right {
+  height: 0.9em;
+}
+
 .person-1 {
   margin-bottom: 3vh;
 }
 
 /* ======== Section D ======== */
+.faq {
+  padding: 0 0 0 2vw;
+}
+
 .faq-wrapper {
   -ms-grid-column: 1;
   grid-column: 1/1;
@@ -574,11 +585,15 @@ button.accordion.is-open::after {
 }
 
 /* ======== Section E ======== */
-.grid__oferta {
+.offer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+}
+
+.section-e__h2 {
+  padding: 0px 0 0 calc(2vw + 1px);
 }
 
 .price {
@@ -599,6 +614,10 @@ button.accordion.is-open::after {
 /* ======== Section F ======== */
 .grid__item--text-F {
   padding-bottom: 3vh;
+}
+
+.section-f__h2 {
+  padding: 0 0 0 calc(2vw + 2px);
 }
 
 .krakow {
@@ -1012,8 +1031,11 @@ footer {
   h2 {
     font-size: 2em;
     border-left: 1px solid #004D49;
-    padding: 0 0 0 2px;
+    padding: 0px 0 10px calc(2vw - 3px);
     margin: 0.1em 0;
+  }
+  .section-b__h2 {
+    padding: 0 0 0 calc(2vw + 6px);
   }
   p {
     font-size: 0.7em;
@@ -1023,6 +1045,7 @@ footer {
     -ms-grid-column: 1;
     grid-column: 1/1;
     margin-left: 2.5vw;
+    padding: 0 0 0 calc(2vw - 3px);
   }
   .faq-wrapper {
     -ms-grid-column: 1;
@@ -1050,12 +1073,12 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .section-f__h2 {
+    padding: 0px 0 0 calc(2vw - 4px);
+  }
   #section-f {
     margin-top: 5vh;
     padding-bottom: 0px;
-  }
-  #section-f > .container > .grid > h2 {
-    margin-left: 5vw;
   }
   .grid__item--text-F {
     -ms-grid-column: 1;
@@ -1128,6 +1151,9 @@ footer {
   }
   .arrow-down {
     margin-top: 30vh;
+  }
+  .section-b__h2 {
+    padding: 0px 0 0 calc(2vw + 11px);
   }
   .grid--footer {
     display: -ms-grid;

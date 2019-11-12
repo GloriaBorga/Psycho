@@ -29,18 +29,12 @@ const navSlide = () => {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
       }
     });
-
-  }
+   }
   )
-
 }
 navSlide();
 // Accordion
-
 let acc = document.getElementsByClassName("accordion");
-console.log(acc);
-
-
 for(let i=0;i < acc.length; i++){
   acc[i].onclick = function(){
     this.classList.toggle('is-open');
