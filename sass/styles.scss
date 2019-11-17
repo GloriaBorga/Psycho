@@ -1,3 +1,15 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 $main: #004D49;
 $white: #f3f3f3;
 $easing: cubic-bezier(.25,1.7,.35,.8);
@@ -902,6 +914,9 @@ footer{
         background-size: cover;
         height: 100vh;
     }
+    .logo{
+        width: 30vw;
+    }
     .arrow-down{
         margin-top: 30vh;
     }
@@ -917,6 +932,9 @@ footer{
     main{
         padding-top: 0vh;
         padding-bottom: 10vh;
+    }
+    .logo{
+        width: 25vw;
     }
     .arrow-down{
         margin-top: 25vh;
