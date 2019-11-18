@@ -1160,6 +1160,9 @@ footer {
     background-size: cover;
     height: 100vh;
   }
+  .logo {
+    width: 30vw;
+  }
   .arrow-down {
     margin-top: 30vh;
   }
@@ -1178,6 +1181,9 @@ footer {
   main {
     padding-top: 0vh;
     padding-bottom: 10vh;
+  }
+  .logo {
+    width: 25vw;
   }
   .arrow-down {
     margin-top: 25vh;
