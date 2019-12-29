@@ -48,7 +48,7 @@
     </button>
   </div>
   </div>
-  <header id="showcase" class="">
+  <header id="showcase">
       <div class="bg-image"></div>
       <div class="content-wrap">
         <div class="logo">
@@ -64,7 +64,7 @@
     <section id="section-a">
       <div class="container">
         <div class="grid">
-          <div class="grid__item--text">
+          <div class="grid-item__text">
             <h2>Czym jest psychoterapia</h2>
             <p>Psychoterapia jest metodą leczenia i wspomagania osób przeżywających
                kryzysy psychologiczne oraz trudności życiowe. Podstawą psychoterapii jest
@@ -75,12 +75,12 @@
                i oczekiwania pacjenta. Szczegółowe cele psychoterapii są ustalane
               indywidualnie wspólnie z pacjentem.</p>
           </div>
-          <div class="grid__item--img">
+          <div class="grid-item__img">
             <picture>
               <source media="(max-width: 360px)" srcset="images/section__a--small.jpg 360w">
               <source media="(max-width: 568px)" srcset="images/section__a--med.jpg 568w">
               <source media="(max-width: 1024px)" srcset="images/section__a--big.jpg 1024w">
-              <img class="" alt="" src="images/section__a--big.jpg">
+              <img class="" alt="photo of psychologist cabinet " src="images/section__a--big.jpg">
             </picture>
           </div>
         </div>
@@ -89,9 +89,9 @@
     <section id="section-b">
         <div class="container">
             <div class="grid">
-            <div class="grid__item--text section-b_text">
+            <div class="grid-item__text section-b__text">
               <h2 class="section-b__h2">W czym możemy pomóc:</h2>
-              <ul class="grid__item--ul">
+              <ul class="grid-item__ul">
                   <li>utrzymujące się uczucie smutku, beznadziejności,
                       przytłoczenia problemami, brak poczucia sensu lub
                       zadowolenia z życia</li>
@@ -108,12 +108,12 @@
                   <li>trudności motywacyjne, rozwój osobisty</li>
                 </ul>
             </div>
-            <div class="grid__item--img section-b_img">
+            <div class="grid-item__img section-b__img">
               <picture>
                 <source media="(max-width: 360px)" srcset="images/section__b--small.jpg 360w">
                 <source media="(max-width: 568px)" srcset="images/section__b--med.jpg 568w">
                 <source media="(max-width: 1024px)" srcset="images/section__b--big.jpg 1024w">
-                <img class="" alt="" src="images/section__b--big.jpg">
+                <img class="" alt="photo of psychologist cabinet" src="images/section__b--big.jpg">
               </picture>
             </div>
           </div>
@@ -121,29 +121,32 @@
     </section>
     <section id="section-c">
       <div class="container">
-        <h2>Terapeuci</h2>
+        <h2 class="therapist">Terapeuci</h2>
         <div class="grid">
-          <div class="grid__item--photo photo__person--1">
+          <div class="grid-item__photo photo-person__1">
             <picture>
                   <source media="(max-width: 360px)" srcset="images/Kasia-mala.png 360w">
                   <source media="(max-width: 768px)" srcset="images/Kasia-duza.jpg 768w">
-                  <img class="" alt="" src="images/Kasia-duza.jpg">
+                  <img class="" alt="photo of Katarzyna" src="images/Kasia-duza.jpg">
                 </picture>
           </div>
-          <div class="card person-1">
+          <div class="person-1">
+            <h2 class="therapist-2">Terapeuci</h2>
+            <div class="card person-1">
             <h3>Katarzyna Kowalska</h3>
             <p>psycholog/psychoterapeuta</p>
             <p>+48 515 199 230</p>
             <p>katarzyna.olga.kowalska@gmail.com</p>
-            <button class="btn btn__more"><a target="_blank" rel="noopener noreferrer" href="/kasia.html" title="Katarzyna Kowalska">
+            <button class="btn btn-more"><a target="_blank" rel="noopener noreferrer" href="/kasia.html" title="Katarzyna Kowalska">
               <span>więcej</span><i class="fas fa-angle-right"></i></a></button>
             </button>
+            </div>
           </div>
-          <div class="grid__item--photo photo__person--2">
+          <div class="grid-item__photo photo-person__2">
               <picture>
                   <source media="(max-width: 360px)" srcset="images/gala-mala.png 360w">
                   <source media="(max-width: 768px)" srcset="images/gala-duza.jpg 768w">
-                  <img class="" alt="" src="images/gala-duza.jpg">
+                  <img class="" alt="photo of Marta" src="images/gala-duza.jpg">
                 </picture>
           </div>
           <div class="card person-2">
@@ -151,7 +154,7 @@
             <p>psycholog/psychoterapeuta</p>
             <p>+48 661 643 799</p>
             <p>magalkowska@gmail.com</p>
-            <button class="btn btn__more"><a target="_blank" rel="noopener noreferrer" href="/marta.html" title="Marta Gałkowska">
+            <button class="btn btn-more"><a target="_blank" rel="noopener noreferrer" href="/marta.html" title="Marta Gałkowska">
               <span>więcej</span><i class="fas fa-angle-right"></i></a></button>
             </button>
           </div>
@@ -202,23 +205,17 @@
     <section id="section-e">
       <div class="container">
         <div class="grid offer">
-            <div class="grid__item--img">
+            <div class="grid-offer__img">
                 <picture>
                   <source media="(max-width: 360px)" srcset="images/bb.jpg 360w">
                   <source media="(max-width: 568px)" srcset="images/bb.jpg 568w">
                   <source media="(max-width: 1024px)" srcset="images/bb.jpg 1024w">
-                  <img class="" alt="" src="images/bb.JPG">
-                  <!--
-                  <source media="(max-width: 360px)" srcset="images/section__a--small.jpg 360w">
-                  <source media="(max-width: 568px)" srcset="images/section__a--med.jpg 568w">
-                  <source media="(max-width: 1024px)" srcset="images/section__a--big.jpg 1024w">
-                  <img class="" alt="" src="images/section__a--big.jpg">
-                  -->
+                  <img class="" alt="photo of psychologist cabinet" src="images/bb.JPG">
                 </picture>
               </div>
-          <div class="grid__item--text">
+          <div class="grid-item__text">
               <h2 class="section-e__h2">Oferta</h2>
-            <div class="Price__box--bigscreen">
+            <div class="price-box__bigscreen">
               <div class="price">
                 <span>Terapia indywidualna</span>
                 <span>100 zł</span>
@@ -239,14 +236,14 @@
     <section id="section-f">
       <div class="container">
         <div class="grid">
-          <div class="grid__item--text grid__item--text-F">
+          <div class="grid-item__text grid-item__text-F">
             <h2 class="section-f__h2">Kontakt i dojazd</h2>
             <p class="krakow">Kraków</p>
             <p class="street"> ul. Ludwika Nabielaka 1</p>
             <p class="number-1">+48 661 643 799 - Marta Gałkowska</p>
             <p class="number-2">+48 515 199 230 - Katarzyna Kowalska</p>
           </div>
-          <div class="grid__item--map">
+          <div class="grid-item__map">
             <div id="map"></div>
         </div>
         </div>
@@ -254,19 +251,19 @@
     </section>
   </main>
   <footer>
-    <div class="grid--footer">
-      <div class="footer--logo"><a href="#showcase">
+    <div class="grid-footer">
+      <div class="footer-logo"><a href="#showcase">
         <img src="images/logo-white.png" alt="logo">
         </a>
       </div>
-      <div class="footer--text">
+      <div class="footer-text">
         <ul>
           <li><button class="btn footer-bnt"><a href="#section-a">Psychoterapia</a></button></li>
           <li><button class="btn footer-bnt"><a href="#section-b">O nas</a></button></li>
           <li><button class="btn footer-bnt"><a href="#section-c">Terapeuci</a></button></li>
         </ul>
       </div>
-      <div class="footer--text_2">
+      <div class="footer-text__2">
         <ul>
           <li><button class="btn footer-bnt"><a href="#section-d">FAQ</a></button></li>
           <li><button class="btn footer-bnt"><a href="#section-e">Oferta</a></button></li>
@@ -286,4 +283,5 @@
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6DWanpEFTzgcm8ppXF9c-HoVWb9pPARA&callback=initMap"></script>
 </body>
+<script src="https://skrypt-cookies.pl/id/934db4a61bc234fd.js"></script>
 </html>

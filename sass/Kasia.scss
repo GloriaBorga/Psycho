@@ -111,7 +111,7 @@ li{
 .logo{
   max-width: 40vw;
 }
-.male-menu{
+.small-menu{
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   padding:2vh 0;
@@ -135,11 +135,11 @@ li{
   border-top: 1px solid #004D49;
   padding-top: 5px;
 }
-.tekst{
+.text{
   border-top: 1px solid #004D49;
   padding-top: 5px;
 }
-.tekst2{
+.text-2{
   padding-top: 25px;
 }
 
@@ -151,19 +151,19 @@ footer{
   padding: 20px 0;
   background-color: #312F38;
 }
-.grid--footer{
+.grid-footer{
   display: grid;
   grid-template-columns: 2.5% 40% 8% 20% 20% 7.5%;;
   //padding-top: 5vh;
   grid-gap: 0.5em;
   grid-template-rows: 1fr;
 }
-.footer--logo{
+.footer-logo{
   grid-column: 2;
   padding-left: .3em;
   grid-row: 1;
 }
-.footer--text{
+.footer-text{
   grid-column: 4;
   grid-row: 1/1;
   justify-self: left;
@@ -177,7 +177,7 @@ footer{
       }
   }
 }
-.footer--text_2{
+.footer-text__2{
   grid-column: 5;
   grid-row: 1/1;
   justify-self: left;
@@ -208,14 +208,14 @@ footer{
   }
 }
 @media (min-width: 768px){
-  .grid--footer{
+  .grid-footer{
     display: grid;
     grid-template-columns: 2.5% 40% 10% 20% 20% 12.5%;
     //padding-top: 5vh;
     grid-gap: 0.5em;
     grid-template-rows: 1fr;
 }
-.footer--text{
+.footer-text{
     padding-top: 5vh;
     grid-column: 4/5;
     font-size: 1em;
@@ -226,7 +226,7 @@ footer{
         }
     }
 }
-.footer--text_2{
+.footer-text__2{
 padding-top: 5vh;
 grid-column: 5/6;
 grid-row: 1/1;
@@ -276,14 +276,14 @@ ul{
   grid-column: 2/5;
 }
 
-.grid--footer{
+.grid-footer{
   display: grid;
   grid-template-columns: 2.5% 20% 30% 15% 15% 12.5%;
   //padding-top: 5vh;
   grid-gap: 0.5em;
   grid-template-rows: 1fr;
 }
-.footer--text{
+.footer-text{
   padding-top: 3vh;
   grid-column: 4/5;
   ul{
@@ -293,7 +293,7 @@ ul{
       }
   }
 }
-.footer--text_2{
+.footer-text__2{
   padding-top: 3vh;
   grid-column: 5/6;
   grid-row: 1/1;
@@ -310,7 +310,7 @@ ul{
  }
 }
 @media (min-width:  1400px){
-  .grid--footer{
+  .grid-footer{
     display: grid;
     grid-template-columns: 8% 15% 35% 15% 15% 5%;
 }
@@ -322,7 +322,7 @@ ul{
 
 }
 @media (min-width:  1600px){
-  .grid--footer{
+  .grid-footer{
       display: grid;
       grid-template-columns: 8% 15% 35% 15% 15% 5%;
   }
