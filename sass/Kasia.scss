@@ -101,7 +101,7 @@ li{
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 2fr;
-    ms-grid-rows: 2fr;
+    -ms-grid-rows: 2fr;
 }
 .grid-left {
   margin: 0em 0em 5em 0em;
@@ -251,7 +251,7 @@ ul{
   -ms-grid-columns: 25% 5% 40% 5% 25%;
   grid-template-columns: 25% 5% 40% 5% 25%;
   grid-template-rows: 2fr;
-  ms-grid-rows: 2fr;
+  -ms-grid-rows: 2fr;
 }
 .grid-left {
   margin: 1em 0;

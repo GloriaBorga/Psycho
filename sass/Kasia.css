@@ -104,9 +104,8 @@ li {
   display: grid;
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr;
   -ms-grid-rows: 2fr;
-      grid-template-rows: 2fr;
-  ms-grid-rows: 2fr;
 }
 
 .grid-left {
@@ -291,9 +290,8 @@ footer {
     display: grid;
     -ms-grid-columns: 25% 5% 40% 5% 25%;
     grid-template-columns: 25% 5% 40% 5% 25%;
+    grid-template-rows: 2fr;
     -ms-grid-rows: 2fr;
-        grid-template-rows: 2fr;
-    ms-grid-rows: 2fr;
   }
   .grid-left {
     margin: 1em 0;
