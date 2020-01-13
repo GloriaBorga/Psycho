@@ -12,6 +12,11 @@ a:-webkit-any-link {
 html {
   font-size: calc(1em + 1vw);
   scroll-behavior: smooth;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+strong {
+  font-weight: 400;
 }
 
 body {

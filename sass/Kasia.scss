@@ -18,8 +18,11 @@ a:-webkit-any-link {
 html {
     font-size: calc(1em + 1vw);
     scroll-behavior: smooth;
+    font-family: $text-font;
 }
-
+strong {
+  font-weight: 400;
+}
 body{
     overflow-x: hidden;
     margin: 0px;
@@ -112,7 +115,7 @@ li{
   max-width: 40vw;
 }
 .small-menu{
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $text-font;
   font-size: 1em;
   padding:2vh 0;
 }

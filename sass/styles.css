@@ -32,6 +32,7 @@ h1, h2, h3 {
   margin: 0;
   padding: 1em 0;
   font-size: 1.8em;
+  font-weight: 600 !important;
 }
 
 p {
@@ -39,6 +40,10 @@ p {
   padding: 1em 0;
   font-size: 0.85em;
   text-align: justify;
+}
+
+strong {
+  font-weight: 400;
 }
 
 a:-webkit-any-link {
@@ -443,6 +448,7 @@ p {
 /* ======== Section B ======== */
 .section-b__h2 {
   padding: 0 0 0 4vw;
+  font-weight: 600 !important;
 }
 
 .grid-item__ul {
@@ -664,6 +670,10 @@ button.accordion.is-open::after {
   font-size: 0.9em;
   padding-top: 3vh !important;
   text-align: left;
+}
+
+.grid-item__map {
+  z-index: 0;
 }
 
 #map {
@@ -1137,7 +1147,7 @@ footer {
   .grid-item__map {
     -ms-grid-column: 2;
     grid-column: 2;
-    z-index: -10;
+    z-index: 0;
   }
   .grid-footer {
     display: -ms-grid;
